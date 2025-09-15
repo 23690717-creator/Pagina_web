@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página 1 - Tema</title>
+  <style>
+    :root { --bg: #f4f4f4; --header:#2c3e50; --text:#1a1a1a; --link:#1a5a9a; --sidebar:#34495e; --content:#fff; --accent:#e67e22; }
+    *{box-sizing:border-box} 
+    body{margin:0; font-family: Verdana, Geneva, Tahoma, sans-serif; background:var(--bg); color:var(--text)}
+    header#header{background:var(--header); color:#fff; padding:14px 20px}
+    .header-inner{max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:20px}
+    .logo img{height:70px; width:auto}
+    .slogan{ text-align:left; font-size:1.2rem; font-family: Verdana, Geneva, Tahoma, sans-serif}
+    
+    /* Nuevo menú con divs */
+    .nav-container {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    .nav-bar {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-bar a {
+      color: #fff;
+      text-decoration: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.05rem;
+      padding: 8px 12px;
+      display: inline-block;
+      border-radius: 4px;
+    }
+    .footer {
+            background: var(--header);
+            color: #fff;
+            padding: 12px 20px;
+            text-align: center;
+        }
+
+
+    .nav-bar a:hover {
+      color: #ffd699;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Layout principal */
+    .layout{max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr; gap:20px; padding:20px}
+    main#content{background:var(--content); padding:20px; border-radius:6px; display:flex; flex-direction:column; align-items:stretch}
+    h1{font-family: Verdana; font-size:1.8rem; margin-top:0}
+    .media{ display:flex; justify-content:center; align-items:center; margin-top:12px}
+    .media img{ max-width:100%; height:auto; border-radius:6px }
+    p{line-height:1.6; font-size:1.05rem}
+
+    @media (max-width:900px){
+      .header-inner{flex-direction:column; align-items:stretch}
+      .layout{grid-template-columns:1fr; padding:12px}
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="https://thf.bing.com/th/id/OIP.5Qnm7VHGyBN9Xs07DzmXoQHaHa?w=184&h=183&c=7&r=0&o=7&cb=thfc1&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="Logo del tema">
+      </div>
+      <div class="slogan"></div>
+    </div>
+  </header>
+  
+  <!-- Menú actualizado con divs -->
+  <div class="nav-container" aria-label="Navegación principal">
+    <nav class="nav-bar" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="Pagina1.html">Biografia</a>
+      <a href="pagina2.html">Más información</a>
+      <a href="pagina3.html">Contribuciones</a>
+    </nav>
+  </div>
+
+  <!-- Contenido -->
+  <div class="layout">
+    <main id="content" role="main">
+      <h1>Biografia</h1>
+      <p>Spencer comenzó en Microsoft en 1988 como pasante y ha trabajado en un número de funciones técnicas, dirigiendo el desarrollo de los primeros software en formato CD-ROM de Microsoft, como Encarta, Microsoft Bookshelf, entre otros productos. También fue director de desarrollo para Microsoft Money, y director general de productos centrados en productividad del consumidor como Microsoft Woks y Microsoft Picture It!</p><br>
+      <p>Spencer sirvió como director general de Microsoft Game Studios EMEA, trabajando con estudios y desarrolladores europeos de Microsoft como Lionhead Studios y Rare hasta 2008, cuando asumió el cargo de director general de Microsoft Studios, convirtiéndose en el vicepresidente corporativo del estudio un año más tarde.​ Ha participado en las conferencias de Microsoft en E3 desde 2010.</p><br>
+      <p>A fines de marzo de 2014, Satya Nadella anunció en un correo electrónico corporativo que Spencer sería designado a "dirigir los equipos de Xbox, Xbox Live, Xbox Music, y Xbox Video, y Microsoft Studios".</p><br>
+      <p>Poco después de su designación, en una entrevista con Larry Hryb, Spencer declaró que se habían tomado algunas malas decisiones con respecto a la dirección de la Xbox One y que la consola se centraría más en videojuegos en vez de entretenimiento general.​ En septiembre de 2017, Spencer fue promovido al Senior Leadership Team, obteniendo el título de Vicepresidente Ejecutivo de Gaming dentro de la compañía. Phil le reporta directamente al CEO Satya Nadella.</p>
+      <div class="media">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.XDQbgZdcpVr6yjOAFQyvrgHaEK?cb=thfc1ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Imagen del subtema">
+      </div>
+    </main>
+  </div>
+
+    <div class="footer" role="contentinfo" aria-label="Pie de página">
+        <div class="footer-content">
+            <div style="max-width:1100px; margin:0 auto;">
+                <p style="margin:0;">
+                    © 2025 Sitio de ejemplo. Todos los derechos reservados.
+                    <span style="margin-left:12px;">Contacto: <a href="mailto:contacto@example.com" style="color:#ffd699; text-decoration:none;">www.xbox.com</a></span>
+                </p>
+                <small>Angel Josafat Rivera Bocanegra</small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

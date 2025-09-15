@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página 3 - Multimedia</title>
+    <style>
+        :root { --bg: #f4f4f4; --header:#2c3e50; --text:#1a1a1a; --content:#fff; }
+        *{box-sizing:border-box} 
+        body{margin:0; font-family: Verdana, Geneva, Tahoma, sans-serif; background:var(--bg); color:var(--text)}
+
+        header#header{background:var(--header); color:#fff; padding:14px 20px}
+        .header-inner{max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 2fr; align-items:center; gap:20px}
+        .logo img{height:70px}
+
+        /* Nuevo menú igual al de las otras páginas */
+        .nav-container {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .nav-bar {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-bar a {
+            color: #fff;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.05rem;
+            padding: 8px 12px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+        .nav-bar a:hover {
+            color: #ffd699;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Layout principal sin sidebar */
+        .layout{max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr; gap:20px; padding:20px}
+        main#content{background:#fff; padding:20px; border-radius:6px}
+        h1{font-family: Verdana; font-size:1.8rem; margin-top:0}
+        .media img{ max-width:100%; height:auto; border-radius:6px }
+        .media video{ width:100%; border-radius:6px }
+        p{line-height:1.6; font-size:1.05rem}
+
+        @media (max-width:900px){
+            .layout{grid-template-columns:1fr}
+        }
+
+        .footer {
+            background: var(--header);
+            color: #fff;
+            padding: 12px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="https://thf.bing.com/th/id/OIP.5Qnm7VHGyBN9Xs07DzmXoQHaHa?w=184&h=183&c=7&r=0&o=7&cb=thfc1&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="Logo del tema">
+            </div>
+            <div class="slogan"></div>
+        </div>
+    </header>
+
+    <!-- Menú actualizado con divs -->
+    <div class="nav-container" aria-label="Navegación principal">
+        <nav class="nav-bar" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="pagina1.html">Biografia</a>
+            <a href="pagina2.html">Más información</a>
+            <a href="pagina3.html">Contribuciones</a>
+        </nav>
+    </div>
+
+    <div class="layout">
+        <main id="content" role="main">
+            <h1>Principales contribuciones</h1>
+            <p>Phil Spencer ha sido un pilar fundamental en la evolución de Xbox, contribuyendo a varios hitos clave en la historia de la compañía. Aquí hay un resumen de sus contribuciones:</p><br>
+            <p><h5>Lanzamiento de Xbox Live:</h5> En 2001, Xbox Live se lanzó como un servicio de juego en línea, revolucionando la experiencia de juego en línea y posicionando a Microsoft como un competidor serio en la industria.</p>
+            <p><h5>Xbox Game Pass:</h5> En 2015, se lanzó Xbox Game Pass, un servicio de suscripción que ofrece acceso a una amplia biblioteca de juegos por un precio mensual, cambiando la forma en que los jugadores acceden al contenido.</p>
+            <p><h5>Xbox One y Xbox Series X/S:</h5> Bajo su liderazgo, Xbox ha lanzado nuevas consolas de juego, como Xbox One S, Xbox One X y Xbox Series X|S, que han establecido nuevos estándares en términos de rendimiento y experiencia de juego.</p>
+            <p><h5>Ecosistema de entretenimiento:</h5> Spencer ha promovido un ecosistema de entretenimiento más amplio, abarcando consolas, PC, y dispositivos móviles a través de la tecnología de juego en la nube con Xbox Cloud Gaming.</p>
+        </main>
+    </div>
+
+    <div class="footer" role="contentinfo" aria-label="Pie de página">
+        <div class="footer-content">
+            <div style="max-width:1100px; margin:0 auto;">
+                <p style="margin:0;">
+                    © 2025 Sitio de ejemplo. Todos los derechos reservados.
+                    <span style="margin-left:12px;">Contacto: <a href="mailto:contacto@example.com" style="color:#ffd699; text-decoration:none;">www.xbox.com</a></span>
+                </p>
+                <small>Angel Josafat Rivera Bocanegra</small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
